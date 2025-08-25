@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Meeting Scheduler</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 AI Meeting Scheduler</h1>
+            <p>Chat with your team and let AI schedule your meetings!</p>
+        </header>
+
+        <div class="main-content">
+            <!-- Chat Section -->
+            <div class="chat-section">
+                <div class="chat-header">
+                    <h2>Team Chat</h2>
+                    <button id="schedule-btn" class="schedule-btn">📅 Schedule Meeting</button>
+                </div>
+                
+                <div id="chat-messages" class="chat-messages">
+                    <!-- Messages will be loaded here -->
+                </div>
+                
+                <div class="chat-input">
+                    <select id="user-select">
+                        <option value="">Select User</option>
+                    </select>
+                    <input type="text" id="message-input" placeholder="Type your message...">
+                    <button id="send-btn">Send</button>
+                </div>
+            </div>
+
+            <!-- Status Section -->
+            <div class="status-section">
+                <div id="status-messages">
+                    <p>💬 Chat loaded! You can add new messages or click "Schedule Meeting" to analyze the conversation.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
